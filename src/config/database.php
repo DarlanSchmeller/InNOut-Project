@@ -10,5 +10,13 @@ class Database {
          if($conn->connect_error) {
             die("Erro: $conn->connect_error");
          }
+         return $conn;
+    }
+
+    public static function getResultFromQuery($sql) {
+        $conn = self::getConnection();
+        $result = $conn->query($sql); // The SQL parameter is used to run the query
+        $conn->close();
+        return $result; // Then the query results are returned
     }
 }
