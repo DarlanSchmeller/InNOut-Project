@@ -11,7 +11,7 @@ class Model {
 
     public function loadFromArray($arr) {
         if($arr) {
-            foreach($arr as $key => $value){
+            foreach($arr as $key => $value) {
                 $this->$key = $value;
             }
         }
@@ -22,6 +22,13 @@ class Model {
 
     public function __set($key, $value) {
         $this->values[$key] = $value;
+    }
+    public static function getOne($filters = [], $columns = '*') {
+        $class = get_called_class();
+        $result = static::getResultSetFromSelect($filters, $columns);
+        
+
+        return $result ? new $class($result->fetch_assoc()) : null;
     }
 
     public static function get($filters = [], $columns = '*') {
@@ -59,7 +66,6 @@ class Model {
                 $sql .= " AND $column = " . static::getFormatedValue($value);
             }
         }
-
         return $sql;
     }
 
