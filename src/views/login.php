@@ -15,11 +15,9 @@
         <div class="login-card card">
             <div class="card-header">
                 <i class="icofont-travelling mr-1"></i>
-
                 <span class="font-weight-light">In</span>
                 <span class="font-weight-bold mx-2">N'</span>
                 <span class="font-weight-light">Out</span>
-
                 <i class="icofont-runner-alt-1 ml-2"></i>
             </div>
             <div class="card-body">
@@ -37,10 +35,10 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="password">E-mail</label> 
+                    <label for="password">Password</label> 
                     <input type="password" id="password" name="password"
                     class="form-control <?= $errors['password'] ? 'is-invalid' : '' ?>"
-                    placeholder="Informe o e-mail" autofocus>
+                    placeholder="Informe a senha" autofocus>
                     
                     <div class="invalid-feedback">
                         <?= $errors['password'] ?>
