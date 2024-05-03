@@ -44,9 +44,9 @@
                         <?= $errors['password'] ?>
                     </div>
             </div>
-            <div class="card-footer">
-                <button class="btn btn-lg btn-primary">Entrar</button>
-            </div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-lg btn-primary">Entrar</button>
         </div>
     </form>
 </body>

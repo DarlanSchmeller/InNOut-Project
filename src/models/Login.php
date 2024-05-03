@@ -1,6 +1,4 @@
 <?php 
-loadModel('User');
-// The login class extends model since it has login info and other data.
 
 class Login extends Model {
 

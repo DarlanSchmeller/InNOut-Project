@@ -11,7 +11,7 @@
     <title>In n' Out</title>
 </head>
 <!-- class="hide-sidebar" -->
-<body > 
+<body> 
     <header class="header">
         <div class="logo">
             <i class="icofont-travelling mr-2 ml-3"></i>
@@ -27,7 +27,10 @@
         <div class="spacer"></div>
         <div class="dropdown">
             <div class="dropdown-button">
-                <span class="ml-2">Usuário Mock</span>
+                <img class="avatar"
+                 src=" <?= "http:///www.gravatar.com/avatar.php?agravatar_id="
+                . md5(strtolower(trim($_SESSION['user']->email))) ?>" alt="user">
+                <span class="ml-3"> <?= $_SESSION['user']->name  ?> </span>
                 <i class="icofont-simple-down mx-3"></i>
             </div>
             <div class="dropdown-content">
