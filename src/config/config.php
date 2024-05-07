@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_get('America/Sao Paulo'); // Defines timezone to get the current Sao Paulo time
+date_default_timezone_set('America/Sao_Paulo'); // Defines timezone to get the current Sao Paulo time
 setlocale(LC_TIME, 'pt_BR', 'pt-BR.uft-8', 'portuguese'); // Defines the formatting standard to pt-BR
 
 // ----------------- CONSTANTES GERAIS ----------------------
@@ -20,6 +20,7 @@ require_once(realpath(dirname(__FILE__) . '/database.php')); // Adds the databas
 require_once(realpath(dirname(__FILE__) . '/loader.php')); // Adds the loader.php file.
 require_once(realpath(dirname(__FILE__) . '/session.php'));
 require_once(realpath(dirname(__FILE__) . '/date_utils.php'));
+require_once(realpath(dirname(__FILE__) . '/utils.php'));
 require_once(realpath(MODEL_PATH . '/Model.php'));
 require_once(realpath(MODEL_PATH . '/User.php'));
 require_once(realpath(EXCEPTION_PATH . '/AppException.php'));
