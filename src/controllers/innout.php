@@ -12,6 +12,7 @@ try {
 
     if($_POST['forcedTime']) {
         $currentTime = $_POST['forcedTime'];
+        echo 'a';
     }
 
     $records->innout($currentTime);
