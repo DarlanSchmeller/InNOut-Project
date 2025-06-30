@@ -1,62 +1,63 @@
-# :briefcase: InʼNʼOut — Sistema de Controle de Ponto
+# :briefcase: InʼNʼOut — Time Tracking System
 
-## :globe_with_meridians: Visão Geral  
-Este repositório reúne o projeto final do curso **PHP 7 Completo – Curso do Desenvolvedor Web 2021 + Projetos** (Udemy). Nele, apliquei conceitos de PHP, HTML, CSS, JavaScript, banco de dados e o padrão de projeto MVC para construir o **InʼNʼOut**, um sistema de controle de ponto que permite:
+## :globe_with_meridians: Overview  
+This repository contains the final project from the **PHP 7 Complete – Web Developer Course 2021 + Projects** (Udemy). I applied PHP, HTML, CSS, JavaScript, database concepts, and the MVC design pattern to build **InʼNʼOut**, a time tracking system that allows you to:
 
-- Gerenciar colaboradores (criar, editar e excluir usuários)  
-- Registrar batidas de ponto (entrada e saída)  
-- Gerar relatórios mensais individuais de cada colaborador  
-- Emitir relatórios gerenciais consolidados
-
----
-
-## :rocket: Funcionalidades
-
-1. **Cadastro de Usuários**  
-   - Inclusão, edição e remoção de colaboradores  
-2. **Registro de Ponto**  
-   - Marcação de entrada e saída com timestamp  
-3. **Relatórios Mensais**  
-   - Visão detalhada das horas trabalhadas por colaborador  
-4. **Relatório Gerencial**  
-   - Consolidação de dados para análise de desempenho  
+- Manage employees (create, edit, and delete users)  
+- Record time punches (clock-in and clock-out)  
+- Generate individual monthly reports for each employee  
+- Produce consolidated managerial reports
 
 ---
 
-## :hammer_and_wrench: Tecnologias e Ferramentas
+## :rocket: Features
 
-- **Linguagens & Frameworks**  
-  - PHP 7 (puro)  
+1. **User Management**  
+   - Add, edit, and remove employees  
+2. **Time Punch Recording**  
+   - Timestamped clock-in and clock-out  
+3. **Monthly Reports**  
+   - Detailed view of each employee’s hours worked  
+4. **Managerial Reports**  
+   - Aggregate data for performance analysis  
+
+---
+
+## :hammer_and_wrench: Technologies & Tools
+
+- **Languages & Frameworks**  
+  - Native PHP 7  
   - HTML5, CSS3, JavaScript  
-  - Padrão MVC  
+  - MVC architecture  
 
-- **Banco de Dados**  
+- **Database**  
   - MySQL  
 
-- **IDE & Extensões**  
+- **IDE & Extensions**  
   - Visual Studio Code  
     - Code Runner  
     - Material Icon Theme  
     - Format HTML in PHP  
     - PHP Intelephense  
 
-- **Ambiente Local**  
+- **Local Environment**  
   - Laragon  
   - MySQL Workbench  
 
 ---
 
-## 🛠️ Como Executar o Projeto
+## 🛠️ Getting Started
 
-1. Clone este repositório na sua pasta de desenvolvimento (ex.: `www`, `htdocs`).  
-2. Crie um banco de dados MySQL com o nome `innout`.  
-3. Importe o script SQL (`innout.sql`) para popular as tabelas iniciais.  
-4. Ajuste as credenciais no arquivo `config/db.php`.  
-5. Aponte o document root do servidor para a pasta `public`.  
-6. Acesse `http://localhost/innout` e comece a usar!
+1. Clone this repository into your development folder (e.g., `www`, `htdocs`).  
+2. Create a MySQL database named `innout`.  
+3. Import the `innout.sql` script to set up the initial tables.  
+4. Update your database credentials in `config/db.php`.  
+5. Point your server’s document root to the `public` directory.  
+6. Open `http://localhost/innout` in your browser to start using the app!
 
 ---
 
-## 📚 Referência do Curso
+## 📚 Course Reference
 
-Este projeto foi desenvolvido como parte prática do módulo final do curso **PHP 7 Completo – Curso do Desenvolvedor Web 2021 + Projetos** em [Udemy](https://www.udemy.com/course/php-7-completo/).
+This project was created as the final practical assignment for the **PHP 7 Complete – Web Developer Course 2021 + Projects** on [Udemy](https://www.udemy.com/course/php-7-completo/).
+
